@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zona de Dibujo</title>
+    <link rel="icon" href="../icon.png">
+    <link rel="stylesheet" href="../styles/app.css">
+</head>
+<body>
+    
+    <!--Dimensiones para el Area de Trabajo-->
+    <div class="work-area-dimension">
+        <h2>Dimensiones del Area de Trabajo</h2>
+        Nombre del Area: <input type="text" id="project-name">
+        Altura: <input type="number" id="height">
+        Anchura: <input type="number" id="width">
+        <button id="establish">Establecer</button>
+    </div>
+
+    <!--Area de Trabajo-->
+    <h2>Area de Trabajo</h2>
+    <canvas id="canvas" width="150" height="150" style="border: 1px solid #888;"></canvas>
+
+    <!--Creacion de los 2 rectangulos-->
+    <div class="create-rects">
+        <div class="create-rects__rects rect-1">
+            <h2>Rectangulo 1</h2>
+            PosX: <input type="number" id="rect1-posx">
+            PosY: <input type="number" id="rect1-posy">
+            Alto: <input type="number" id="rect1-height">
+            Ancho: <input type="number" id="rect1-width">
+            Color: <input type="color" id="rect1-color">
+            <button id="rect1-button">Create</button>
+        </div>
+        <div class="create-rects__rects rect-2">
+            <h2>Rectangulo 2</h2>
+            PosX: <input type="number" id="rect2-posx">
+            PosY: <input type="number" id="rect2-posy">
+            Alto: <input type="number" id="rect2-height">
+            Ancho: <input type="number" id="rect2-width">
+            Color: <input type="color" id="rect2-color">
+            <button id="rect2-button">Create</button>
+        </div>
+    </div>
+
+    <script src="../scripts/app.js"></script>
+</body>
+</html>
